@@ -97,6 +97,10 @@ add_executable(ImageEditing main.cpp
         model/transformation/saturation/SaturationTransformation.h
         controller/commands/SaturationCommand.cpp
         controller/commands/SaturationCommand.h
+        model/transformation/FlipTransformation.cpp
+        model/transformation/FlipTransformation.h
+        controller/commands/FlipCommand.cpp
+        controller/commands/FlipCommand.h
 )
 
 target_link_libraries(ImageEditing ${OpenCV_LIBS})

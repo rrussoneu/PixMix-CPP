@@ -30,6 +30,7 @@
 #include "commands/SwapCommand.h"
 #include "commands/PosterizeCommand.h"
 #include "commands/SaturationCommand.h"
+#include "commands/FlipCommand.h"
 #include "../view/IView.h"
 
 class IController {
@@ -63,6 +64,7 @@ public:
         commands["swap"] = make_unique<SwapCommand>();
         commands["posterize"] = make_unique<PosterizeCommand>();
         commands["saturation"] = make_unique<SaturationCommand>();
+        commands["flip"] = make_unique<FlipCommand>();
         commands["load"] = make_unique<LoadCommand>();
         commands["save"] = make_unique<SaveCommand>();
     }
