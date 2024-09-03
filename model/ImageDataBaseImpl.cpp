@@ -13,7 +13,7 @@ IImage& ImageDataBaseImpl::getImage(std::string &id) const {
     if (it != images.end()) {
         return *(it->second);
     } else {
-        throw std::runtime_error("Image not found!"); // Here, you must throw an exception since references cannot be null.
+        throw std::runtime_error("Image not found!"); // Throw an exception since references cannot be null
     }
 }
 

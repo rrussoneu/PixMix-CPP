@@ -13,6 +13,10 @@ public:
     TextView() : IView() {}
     ~TextView() {}
 
+    /**
+     * Writes a message.
+     * @param msg The message to write.
+     */
     void writeMessage(std::string msg) const override final;
 };
 

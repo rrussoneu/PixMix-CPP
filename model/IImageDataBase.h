@@ -18,7 +18,7 @@ protected:
     unordered_map<string, unique_ptr<IImage>> images;
 
 public:
-    IImageDataBase() {}; // nothing happens in constuctor
+    IImageDataBase() {}; // Nothing happens in constuctor
 
     virtual ~ IImageDataBase() = default;
 

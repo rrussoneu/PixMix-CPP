@@ -1,11 +1,12 @@
 cmake_minimum_required(VERSION 3.26)
 find_package(OpenCV REQUIRED)
-find_package(Qt6 COMPONENTS Core Widgets REQUIRED)
+
 include_directories(${OpenCV_INCLUDE_DIRS})
 project(ImageEditing)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_PREFIX_PATH "~/Qt/6.5.2/macos/lib/cmake")
+find_package(Qt6 COMPONENTS Core Widgets REQUIRED)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
@@ -106,6 +107,8 @@ add_executable(ImageEditing main.cpp
         model/transformation/FlipTransformation.h
         controller/commands/FlipCommand.cpp
         controller/commands/FlipCommand.h
+        controller/commands/HelpCommand.cpp
+        controller/commands/HelpCommand.h
 )
 
 target_link_libraries(ImageEditing ${OpenCV_LIBS} Qt6::Core Qt6::Widgets)

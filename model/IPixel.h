@@ -7,6 +7,9 @@
 
 #pragma once
 
+/**
+ * An interface for a class representing a pixel.
+ */
 class IPixel {
 protected:
     int red;
