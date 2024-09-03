@@ -10,6 +10,9 @@
 
 using namespace std;
 
+/**
+ * Interface for a view.
+ */
 class IView {
 public:
     IView() {}
